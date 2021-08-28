@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	 <script>
+ var timeOut = 1000 * 60 * 1; // 30 minutes
+var lastActivity = new Date().getTime();
+var checkTimeout;
+checkTimeOut = function(){
+    if(new Date().getTime() > lastActivity + timeOut){
+        // redirect to timeout page
+    }else{
+        window.setTimeout(checkTimeOut, 1000); // check once per second
+    }
+}
+</script>
+
+		<title>CamRadar Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">CamRadar</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="generic.html">About</a>
+						<a href="index.html">Logout</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>Welcome to future of security.</h1>
+				<p>.</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>View all the criminals<br /> in watchlist.</h3>
+							</header>
+							<p></p>
+							<footer>
+								<a href="datafeed.php" class="button special">View</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3><br /> Recently detected Criminals.</h3>
+							</header>
+							<p><a href="chart.php" class="button special">View</a></p>
+							<footer>
+								
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Update criminal data record<br /> Edit/Delete/Add</h3>
+							</header>
+							<p></p>
+							<footer>
+								<a href="#" class="button special">View</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Recently Detected</h2>
+						<p>Criminals by CamRadar</p>
+					</header>
+					<div class="flex flex-4">
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic03.jpg" alt="Person 1" />
+							</div>
+							<h3>Magna</h3>
+							<p>Cipdum dolor</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic04.jpg" alt="Person 2" />
+							</div>
+							<h3>Ipsum</h3>
+							<p>Vestibulum comm</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic05.jpg" alt="Person 3" />
+							</div>
+							<h3>Tempus</h3>
+							<p>Fusce pellentes</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic06.jpg" alt="Person 4" />
+							</div>
+							<h3>Dolore</h3>
+							<p>Praesent placer</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>How to train a criminal on our system.</h2>
+						<p></p>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/pic02.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Step 1:
+                            Add clear images of the criminal.</h3>
+							</header>
+							<p>Try to add clear pictures of the criminal with good lighting conditions.</p>
+							<footer>
+								
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/pic01.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Step 2: Initiate Training python module </h3>
+							</header>
+							<p>Initiate training module and our system will automatically add the criminal on detection.</p>
+							<footer>
+								
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
